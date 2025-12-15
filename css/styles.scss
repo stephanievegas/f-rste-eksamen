@@ -530,49 +530,6 @@ body {
   font-size: 14px;
 }
 
-/* =========================
-   MEDIA
-========================= */
-@media (min-width: 992px) {
-  .footer-inner {
-    grid-template-columns: 2fr 1fr 1.5fr;
-    align-items: start;
-  }
-
-    .cards {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  .quote-main {
-    font-size: 32px;
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .offers,
-  .locations,
-  .community {
-    padding: 80px 60px;
-  }
-
-  .offers h2 {
-    font-size: 36px;
-  }
-
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .info-cards {
-    padding: 80px 60px;
-  }
-
-  .target-group {
-    padding: 80px 60px;
-  }
-
-}
 
 
 
@@ -618,9 +575,6 @@ body {
 }
 
 
-
-
-
 /* =========================
    OVERLAY
 ========================= */
@@ -630,4 +584,235 @@ body {
   inset: 0;
   background: rgba(0,0,0,0.35);
   pointer-events: none;
+}
+
+
+/* ===== ENVIRONMENTS ===== */
+.environments {
+  padding: 60px 20px;
+}
+
+.environments h2 {
+  color: #aa9f71;
+  margin-bottom: 30px;
+}
+
+/* RAMME */
+.env-box {
+  border: 1px solid #352118;
+  display: flex;
+  flex-direction: column; /* mobil */
+}
+
+/* TEKST SIDE */
+.env-text {
+  background: #352118;
+  color: white;
+  padding: 40px;
+}
+
+.env-text h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* KORT SIDE */
+.env-map {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.env-map img {
+  max-width: 460px;
+}
+
+
+
+
+
+
+/* =========================/* =========================/* =========================/* =========================
+ KONTAKT SIDE
+========================= *//* =========================/* =========================/* =========================
+/* HERO */
+.hero-kontakt {
+  background-image: url("../images/kontaktto.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+
+
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  background: #352118;
+  color: #aa9f71;
+  padding: 80px 20px;
+
+}
+
+.contact-inner {
+  max-width: 700px;
+
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* HEADING */
+.contact-section h2 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+/* ROW (navn + email) */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 12px;
+  margin-bottom: 6px;
+  text-transform: lowercase;
+}
+
+/* INPUTS */
+.form-field input,
+.form-field textarea {
+  background: transparent;
+  border: 1px solid #aa9f71;
+  border-radius: 12px;
+  padding: 12px;
+  color: #aa9f71;
+  font-family: inherit;
+  resize: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #e74c3c;
+}
+
+/* BUTTON */
+.send-btn {
+  align-self: flex-start;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: #aa9f71;
+  color: #352118;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   MEDIA
+========================= */
+@media (min-width: 992px) {
+  .footer-inner {
+    grid-template-columns: 2fr 1fr 1.5fr;
+    align-items: start;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quote-main {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers,
+  .locations,
+  .community {
+    padding: 80px 60px;
+  }
+
+  .offers h2 {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-cards {
+    padding: 80px 60px;
+  }
+
+  .target-group {
+    padding: 80px 60px;
+  }
+
+  .env-box {
+    flex-direction: row;
+  }
+
+  .env-text,
+  .env-map {
+    width: 50%;
+  }
+
+  .environments {
+    padding: 80px 100px;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row .form-field {
+    flex: 1;
+  }
+
+  .contact-section h2 {
+    font-size: 64px;
+  }
 }
