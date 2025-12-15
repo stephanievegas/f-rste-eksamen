@@ -420,52 +420,9 @@ body {
 
 
 
-/* =========================
-   RESPONS IVE
-========================= */
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .info-cards {
-    padding: 80px 60px;
-  }
-
-  .target-group {
-    padding: 80px 60px;
-  }
-}
 
 
-/* ===== DESKTOP ===== */
-@media (min-width: 768px) {
-  .quote-main {
-    font-size: 32px;
-  }
 
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .offers,
-  .locations,
-  .community {
-    padding: 80px 60px;
-  }
-}
-
-.offers h2 {
-  font-size: 36px;
-}
-
-/* ===== DESKTOP ===== */
-@media (min-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-}
 
 
 
@@ -574,11 +531,103 @@ body {
 }
 
 /* =========================
-   FOOTER RESPONS IVE
+   MEDIA
 ========================= */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .footer-inner {
     grid-template-columns: 2fr 1fr 1.5fr;
     align-items: start;
   }
+
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  .quote-main {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers,
+  .locations,
+  .community {
+    padding: 80px 60px;
+  }
+
+  .offers h2 {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-cards {
+    padding: 80px 60px;
+  }
+
+  .target-group {
+    padding: 80px 60px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================/* =========================/* =========================/* =========================
+ OM os SIDE
+========================= *//* =========================/* =========================/* =========================
+
+
+/* HERO */
+.hero-omos {
+  background-image: url("../images/omosfoto.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.hero-content.left {
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* OM OS */
+.about {
+  background: #aa9f71;
+  color: white;
+  padding: 60px 20px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* =========================
+   OVERLAY
+========================= */
+.hero-omos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  pointer-events: none;
 }
