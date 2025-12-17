@@ -45,7 +45,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  color: white;
+  color: #fff8c2;
 }
 
 
@@ -61,7 +61,7 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.35);
-  pointer-events: none; /* 🔥 GØR KLIK MULIGE */
+  pointer-events: none;
 }
 
 
@@ -82,7 +82,14 @@ body {
   padding: 40px 60px;
   z-index: 2;
 
+
+
 }
+
+html {
+  overflow-y: scroll;
+}
+
 
 .logo img {
   height: 140px;
@@ -111,6 +118,8 @@ body {
   border: 2px solid white;
   padding: 8px 16px;
   border-radius: 30px;
+
+
 }
 .btn:hover {
   background: #AA9F71;
@@ -129,6 +138,7 @@ body {
 
   padding-bottom: 220px;
   text-align: center;
+
 }
 
 .hero-content h1 {
@@ -158,11 +168,14 @@ body {
   font-weight: 600;
 
   transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .cta:hover {
   background: #AA9F71;
 }
+
+
 
 
 
@@ -184,16 +197,12 @@ body {
   font-size: 30px;
 }
 
-.quote-main {
-  font-family: 'Parisienne', cursive;
-  font-size: 80px !important;
-  color: #AA9F71;
-}
 
 .quote-sub {
   font-weight: bold;
+  font-size: 40px;
   margin-top: 8px;
-  color: #AA9F71;
+  color: #352118;
 }
 
 
@@ -205,7 +214,7 @@ body {
 ========================= */
 .offers {
   background: #352118;
-  color: #AA9F71;
+  color: #fff8c2;
   padding: 60px 20px;
 }
 
@@ -228,7 +237,7 @@ body {
 }
 
 .number {
-  border: 1px solid #AA9F71;
+  border: 1px solid #fff8c2;
   border-radius: 50%;
   width: 26px;
   height: 26px;
@@ -240,12 +249,12 @@ body {
 .line {
   flex: 1;
   height: 1px;
-  background: #AA9F71;
+  background: #fff8c2;
 }
 
 .offer-list a {
-  color: #AA9F71;
-  border: 1px solid #AA9F71;
+  color: #fff8c2;
+  border: 1px solid #fff8c2;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 13px;
@@ -366,10 +375,11 @@ body {
    GRØN SEKTION
 ========================= */
 .target-group {
-  background: #aa9f71;
-  color: white;
+  background: #fff8c2;
+  color: #352118;
   padding: 60px 20px;
 }
+
 
 .target-inner {
   max-width: 800px;
@@ -403,7 +413,7 @@ body {
   display: inline-block;
   margin-top: 30px;
 
-  background: #e74c3c;
+  background: #352118;
   color: white;
   padding: 14px 32px;
   border-radius: 50px;
@@ -413,7 +423,7 @@ body {
 }
 
 .target-btn:hover {
-  background: #352118;
+  background: #AA9F71;
 }
 
 
@@ -438,7 +448,7 @@ body {
 ========================= */
 .footer {
   background: #352118;
-  color: white;
+  color: #fff8c2;
   padding: 60px 20px 30px;
 }
 
@@ -473,7 +483,6 @@ body {
    FOOTER LIST
 ========================= */
 .footer-links ul {
-
   list-style: none;
 }
 
@@ -482,7 +491,7 @@ body {
 }
 
 .footer-links a {
-  color: white;
+  color: #fff8c2;
   text-decoration: none;
   font-weight: 500;
 }
@@ -542,7 +551,7 @@ body {
 
 
 /* =========================/* =========================/* =========================/* =========================
- OM os SIDE
+ OM OS SIDE
 ========================= *//* =========================/* =========================/* =========================
 
 
@@ -553,7 +562,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  color: white;
+  color: #fff8c2;
 }
 
 .hero-content.left {
@@ -562,17 +571,9 @@ body {
   padding-left: 60px;
 }
 
-/* OM OS */
-.about {
-  background: #aa9f71;
-  color: white;
-  padding: 60px 20px;
-}
 
-.about h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+
+
 
 
 /* =========================
@@ -593,13 +594,14 @@ body {
 }
 
 .environments h2 {
-  color: #aa9f71;
+  color: #352118;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 /* RAMME */
 .env-box {
-  border: 1px solid #352118;
+  border: 1px solid #AA9F71;
   display: flex;
   flex-direction: column; /* mobil */
 }
@@ -607,7 +609,7 @@ body {
 /* TEKST SIDE */
 .env-text {
   background: #352118;
-  color: white;
+  color: #fff8c2;
   padding: 40px;
 }
 
@@ -645,7 +647,12 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  color: white;
+  color: #fff8c2;
+
+}
+
+.hero-kontakt-title{
+  font-weight: bold;
 }
 
 
@@ -654,7 +661,7 @@ body {
 /* ===== CONTACT SECTION ===== */
 .contact-section {
   background: #352118;
-  color: #aa9f71;
+  color: #fff8c2;
   padding: 80px 20px;
 
 }
@@ -705,14 +712,16 @@ body {
   text-transform: lowercase;
 }
 
+
+
 /* INPUTS */
 .form-field input,
 .form-field textarea {
   background: transparent;
-  border: 1px solid #aa9f71;
+  border: 1px solid #fff8c2;
   border-radius: 12px;
   padding: 12px;
-  color: #aa9f71;
+  color: #fff8c2;
   font-family: inherit;
   resize: none;
 }
@@ -720,14 +729,14 @@ body {
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: #e74c3c;
+  border-color: #352118;
 }
 
 /* BUTTON */
 .send-btn {
   align-self: flex-start;
-  background: #e74c3c;
-  color: white;
+  background: #fff8c2;
+  color: #352118;
   border: none;
   padding: 6px 18px;
   border-radius: 16px;
@@ -739,6 +748,50 @@ body {
   background: #aa9f71;
   color: #352118;
 }
+
+
+
+
+
+
+
+
+
+/* =========================
+   BURGER
+========================= */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 2px;
+  background-color: #fff8c2;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff8c2;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+
+
 
 
 
@@ -815,4 +868,8 @@ body {
   .contact-section h2 {
     font-size: 64px;
   }
+
+
+
+
 }
